@@ -1,0 +1,1569 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+ }
+ 
+ body {
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background : linear-gradient(to bottom right, #150341, #410349,#06060ef2);; 
+    }
+
+    canvas {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+     @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    } 
+
+
+
+
+
+
+
+
+  #menu-toggle {
+      display: none;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+
+
+
+
+
+ button{
+   cursor: pointer;
+ }
+ header{
+   width: 100%;
+   height: 90px;
+   justify-items: center;
+   background-color: #06060ef2;
+   padding: 16px 32px;
+   border-bottom: 1px solid grey;
+   position: fixed;
+   box-shadow: 0 10px 20px;
+ }
+ .nav-bar{
+   display: flex;
+   width: 1400px;
+   height: 57px;
+   align-items: center;
+   justify-content: space-between;
+ }
+ .logo{
+    display: flex;
+ }
+  .logo svg{
+    margin: 7px;
+ }
+ .logo h3{
+    color: #00FFFF;
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 0 0 20px;
+ }
+ .logo h3:hover {
+   transform: scale(1.08);
+   transition: 0.5s; 
+   cursor: pointer;
+    
+}
+ .nav-links{
+   display: flex;
+ }
+  .nav-links ul{
+   display: flex;
+   gap: 18px;
+   justify-content: center;
+   align-items: center;
+}
+.nav-links ul li{
+   text-decoration: none;
+   list-style: none
+}
+.nav-links ul li a{
+   color: #A1A1AA;
+   text-decoration: none;
+}
+.nav-links ul li a:hover{
+   cursor: pointer;
+   color: #00FFFF;
+}
+ 
+ .nav-btn button{
+   width: 225px;
+   height: 57px;
+   padding: 16px 32px;
+   background-image: linear-gradient(to bottom right, #00FFFF, #900aa1);
+   border: none;
+   font-size: 16px;
+   font-weight: 500;
+   clip-path: polygon(15px 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);  
+ }
+ .nav-btn button:hover{
+    cursor: pointer;
+ }
+ .nav-btn button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transition: .6s;
+}
+ 
+
+ 
+
+.nav-links li a:hover {
+  color: #00bcd4;
+}
+ .sec-1{
+   width: 100%;
+   height: 100vh;
+   justify-items: center; 
+   padding: 150px 32px 100px;
+   border-bottom: 1px solid grey;
+ }
+ .sec-1-child{
+   width: 1400px;
+   height: 340px;
+   justify-items: center;
+    margin-top: 150px;
+    
+ }
+ .sec-1-title h1{
+   font-size: 96px;
+   font-weight: 500;
+   color: #00FFFF;  
+   text-shadow: 0 0 20px;  
+ }
+ .sec-1-title h1 span{
+   color: #af13c4;
+  }
+  .sec-1-child p{
+   font-size: 24px;
+   color: #A1A1AA;
+   margin: 0px 300px 48px;
+  }
+  .sec-1-btn {
+     display: flex;
+     gap: 40px;
+     
+  }
+  .sec-1-btn button{
+   width: 280px;
+   height: 67px;
+   border: none;
+   clip-path: polygon(15px 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);
+
+  }
+  .sec-1-btn button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transition: .6s;
+}
+  .sec-1-btn-1 button{
+   background-image: linear-gradient(to bottom right, #00FFFF, #900aa1);
+  }
+  .sec-1-btn-2 button{
+   background-color: #341238;
+   border-top: 2px solid  #00FFFF;
+   border-bottom: 2px solid  #00FFFF;
+   color: #00FFFF;
+  }
+  .sec-1-btn-2 button:hover{
+   background-color:  #00FFFF;
+   color: #212525;
+  }
+  .sec-2{
+   width: 100%;
+   height: 300px;
+   padding: 80px 32px;
+   display: flex;
+   justify-items: center;
+   border-bottom: 1px solid grey;
+  }
+
+
+  .sec-2-child{
+     display: flex;
+    width: auto;
+    height: auto;
+    gap: 20px;
+    margin-left: 20%;
+    justify-items: center;
+    
+}
+.factparent{
+    width: 315px;
+    height: auto;
+   color: #00FFFF;
+}
+.factparent P{
+   color: #A1A1AA;
+}
+.factchild{
+    justify-items: center;
+    padding-top: 50px;
+}
+.sec-3{
+   width: 100%;
+   height: 1250px;
+   padding: 120px 32px;
+   justify-items: center;
+}
+.sec-3-child{
+   width: 1400px;
+}
+.sec-3-title{
+   width: auto;
+   height: 155px;
+   justify-items: center;
+   margin-bottom: 80px;
+} 
+.sec-3-title h1{
+   font-size: 48px;
+   font-weight: 500;
+   color: #00FFFF;
+   border-bottom: 3px solid #900aa1;
+}
+.sec-3-title p{
+   font-size: 19px;
+   color: #A1A1AA;
+   margin: 16px 400px 0px;
+}
+.card-parent{
+   width: 1400px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 50px;
+}
+.card{
+   width: 432px;
+   height: 377px;
+   border: 1px solid #A1A1AA;
+   background-color: #E5E7EB08;
+  clip-path: polygon(
+    20px 0,           
+    100% 0,               
+    100% calc(100% - 20px),  
+    calc(100% - 20px) 100%, 
+    0 100%,               
+    0 20px                 
+  );
+    
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transition: .2s;
+}
+.card-child-1{
+   width: 80px;
+   height: 80px;
+   background-image:  linear-gradient(to bottom right, #00FFFF, #900aa1);
+   font-size: 32px;
+   margin: 40px 40px 32px; 
+   padding: 20px;
+   border-radius: 12px;
+      
+}
+.card h3{
+   font-size: 24px;
+   font-weight: 600;
+   color: #00FFFF;
+   margin: 0px 0px 16px 40px;  
+}
+.card p{
+   margin: 0px 40px;
+   color: #A1A1AA;
+   font-size: 18px;
+}
+.sec-4{
+   width: 100%;
+   height: 1220px;
+   padding: 120px 32px;
+   justify-items: center;
+}
+.sec-4-child{
+   width: 1400px;
+   height: auto;
+   justify-items: center;
+}
+.sec-4-title {
+   width: auto;
+   height: 124px;
+   margin-bottom: 80px;
+    justify-items: center;
+}
+.sec-4-title h1{
+   font-size: 48px;
+   margin-bottom: 16px;
+   font-weight: 600;
+   color: #00FFFF;
+   border-bottom: 3px solid #900aa1;
+}
+.sec-4-title p{
+   color: #A1A1AA;
+   font-size: 20px;
+}
+.pricing-card-parent{
+   display: flex;
+   width: 1400px;
+   height: auto;
+   gap: 50px;
+}
+.pricing-card{
+   width: 435px;
+   height: 777px;
+   padding: 48px;
+   justify-items: center;
+   border: 1px solid #A1A1AA;
+   opacity: 0.7;
+   margin-top: 15px;
+    background-color: #E5E7EB08;
+  clip-path: polygon(
+    20px 0,           
+    100% 0,               
+    100% calc(100% - 20px),  
+    calc(100% - 20px) 100%, 
+    0 100%,               
+    0 20px                 
+  );
+}
+.pricing-card-child-1 h4{
+   font-size: 24px;
+   font-weight: 600;
+   color: #00FFFF;
+   margin-bottom: 32px;
+}
+.pricing-card-child-1 h1{
+   font-size: 64px;
+   font-weight: 600;
+   color: aliceblue;
+   margin-bottom: 8px;
+}
+.pricing-card-child-1 p{
+   color: #A1A1AA;
+   margin-bottom: 48px;
+} 
+.pricing-card-child-2 span{
+   display: flex;
+   color: #A1A1AA;
+   padding: 18px 0px;
+   border-bottom: 1px solid #4f6969;   
+}
+.pricing-card button{
+   border: none;
+   margin: 50px 0px 0px 50px;
+   width: 230px;
+   height: 61px;
+   background-color: #28072c;
+   color: #00FFFF;
+   border-bottom: 1px solid #00FFFF;
+   border-top: 1px solid #00FFFF;
+   clip-path: polygon(15px 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);   
+}
+.pricing-card button:hover{
+   background-color: #00FFFF;
+   color:  #252e2e;
+   cursor: pointer;
+}
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transition: .2s;
+}
+.pricing-card-2{
+   width: 456px;
+   height: 816px;
+   padding: 48px;
+   justify-items: center;
+   border: 1px solid #A1A1AA;
+   opacity: 0.7;
+    background-color: #E5E7EB08;
+  clip-path: polygon(
+    20px 0,           
+    100% 0,               
+    100% calc(100% - 20px),  
+    calc(100% - 20px) 100%, 
+    0 100%,               
+    0 20px                 
+  );
+}
+.pricing-card-2 button{
+   border: none;
+   margin: 50px 0px 0px 50px;
+   width: 230px;
+   height: 61px;
+   color: #28072c;
+   clip-path: polygon(15px 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);
+   background-image:  linear-gradient(to bottom right, #00FFFF, #900aa1); 
+}
+.pricing-card-2:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transition: .5s;
+}
+
+.last-sec{
+   width: 100%;
+   height: 1065px;
+   justify-items: center;
+   padding: 120px 32px;
+}
+.last-sec-child{
+   width: 1400px;
+   height: auto;
+   justify-items: center;
+}
+.last-sec-title{
+   width: auto;
+   justify-items: center;
+   margin-bottom: 80px;
+}
+.last-sec-title h1{
+   font-size: 48px;
+   font-weight: 500;
+   color: #00FFFF;
+  border-bottom: 3px solid #900aa1;
+  margin-bottom: 16px;
+}
+.last-sec-title p{
+   color: #A1A1AA;
+   font-size: 20px;
+}
+.contact{
+   display: block;
+   width: 600px;
+   height: 616px;
+   padding: 48px;
+   border: 1px solid #A1A1AA;
+   border-radius: 12px;
+}
+.contact h5{
+   color: #00FFFF;
+   font-size: 14px;
+   font-weight: 600;
+   margin-bottom: 12px;
+}
+.contact input{
+   width: 502px;
+   height: 55px;
+   padding: 16px 24px;
+   margin-bottom: 32px;
+   background-color: transparent;
+   border-radius: 10px;
+   border: 1px solid #A1A1AA;
+}
+.contact textarea{
+   width: 502px;
+   height: 129px;
+   padding: 12px 24px;
+   background-color: transparent;
+   border-radius: 10px;
+   border: 1px solid #A1A1AA;
+   margin-bottom: 32px;
+}
+.contact button{
+   width: 502px;
+   height: 56px;
+   background-image:  linear-gradient(to bottom right, #00FFFF, #900aa1);
+   margin-top: 16px;
+   border: none;
+   font-size: 16px;
+   font-weight: 500;
+   clip-path: polygon(15px 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);
+}
+.contact button:hover{
+   transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transition: .6s;
+}
+.copyright{
+   width: 100%;
+   height: 216px;
+   background-color: #0c0e0e;
+   padding: 60px 32px 40px;
+   margin-top: 80px;
+   justify-items: center;
+}
+.copyright-child{
+   width: 1400px;
+   height: auto;
+   justify-items: center;
+}
+.copyright-child-1{
+   display: flex;
+   color:  #A1A1AA;
+   gap: 50px;
+   margin-bottom: 32px;
+}
+.copyright-child p{
+   color:  #A1A1AA;
+   margin-bottom: 10px;
+} 
+.copyright-child p:hover{
+   color: #00bcd4;
+   cursor: pointer;
+} 
+.copyright-child span{
+   color: #00bcd4;
+} 
+ 
+
+ 
+
+
+ 
+
+
+ 
+
+ @media (max-width: 1440px) {
+    *{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;     
+ }
+   body{
+      max-width: 1440px;
+      margin: 0;  
+   }
+   header{
+      width: 1432px;
+      justify-content: space-between;
+      position: fixed;
+   }
+   .nav-bar{
+      width: auto;
+      justify-content: space-between;
+      gap: 170px;
+      position: fixed;
+   }
+   .sec-1{
+      width: 1432px;
+      height: auto;
+   }
+   .sec-1-child{
+      width: 1368px;
+      height: auto;
+   }
+   .sec-2{
+      width: 1432px;
+      height: auto;
+   }
+   .sec-2-child{
+      width: 1268px;
+      height: auto;
+      margin-left: 100px;
+   }
+   .factparent{
+      width: 1368px;
+      height: auto;
+   }
+   .sec-3{
+      width: 1432px;
+      height: auto;
+   }
+   .sec-3-child{
+      width: 1368px;
+      height: auto;
+   }
+   .card-parent{
+      width: 1368px;
+      height: auto;
+   }
+   .card{
+      width: 422px;
+   }
+   .sec-4{
+      width: 1432px;
+      height: auto;
+   }
+   .sec-4-child{
+      width: 1368px;
+      height: auto;
+   }
+   .pricing-card-parent{
+      width: 1368px;
+      height: auto;
+   }
+   .pricing-card{
+      width: 424px;
+      height: auto;
+   }
+   .last-sec{
+      width: 1432px;
+      height: auto;
+   }
+   .last-sec-child{
+      width: 1368px;
+      height: auto;
+   }
+   .copyright{
+      width: 1432px;
+      height: auto;
+   }
+   .copyright-child{
+      width: 1368px;
+      height: auto;
+   }
+
+}
+
+
+  
+
+
+ @media (max-width: 1024px) {
+    *{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;     
+ }
+   body{
+      max-width: 1024px;
+      margin: 0;  
+   }
+   header{
+      width: 1006px;
+      justify-content: space-between;
+      position: fixed;
+   }
+   .nav-bar{
+      width: auto;
+      justify-content: space-between;
+      gap: 70px;
+      position: fixed;
+   }
+   .nav-btn button{
+      width: 180px;
+      padding: 5px 10px;
+   }
+   .sec-1{
+      width: 1006px;
+      height: 920px;
+   }
+   .sec-1-child{
+      width: 942px;
+      height: auto;
+       
+   }
+   .sec-1-child p{
+      margin: 0 70px 45px;
+   }
+   .sec-2{
+      width: 1006px;
+      height: 290px;
+      padding: 80px 32px;
+   }
+   .sec-2-child{
+      width: 900px;
+      height: auto;
+      margin-left: 40px;
+   }
+   .factparent{
+      width: 900px;
+      height: auto;
+   }
+   .sec-3{
+      width: 1006px;
+      height: 1710px;
+   }
+   .sec-3-child{
+      width: 942px;
+      height: auto;
+   }
+   .card-parent{
+      width: 942px;
+      height: auto;
+   }
+   .sec-3-title p{
+      margin: 0px 170px ;
+   }
+   .sec-4{
+      width: 1006px;
+      height: 2100px;
+   }
+   .sec-4-child{
+      width: 942px;
+      height: auto;
+   }
+   .pricing-card-parent{
+      width: 942px;
+      flex-wrap: wrap;
+   }
+   .last-sec{
+      width: 1006px;
+      height: 1060px;
+   }
+   .last-sec-child{
+      width: 942px;
+      height: auto;
+   }
+   .copyright{
+      width: 1006px;
+      height: 230px;
+   }
+   .copyright-child{
+      width: 942px;
+      height: auto;
+   }
+
+
+}  
+
+ 
+ 
+
+ 
+
+ 
+ 
+@media (max-width: 768px) {
+   *{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;     
+ }
+
+ 
+   body{
+      max-width: 768px;
+      margin: 0;  
+   }
+   header{
+      width: 768px;
+      justify-content: space-between;
+      position: fixed;
+   }
+    .nav-bar{
+      width: auto;
+      justify-content: space-between;
+      gap: 470px;
+   } 
+ 
+
+   .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #332d2d;
+      width: 200px;
+      flex-direction: column;
+      padding: 1rem 0;
+      } 
+
+   .nav-links a {
+      padding: 1rem;
+      }
+
+   #menu-toggle:checked + .menu-icon + .nav-links {
+      display: flex;
+   }
+
+   .menu-icon {
+      display: block;
+      color: #00bcd4;
+   }
+ 
+     
+   .nav-links ul{
+   display: block;
+   height: 200px;
+   background-color: #2c0631;
+   align-items: center;
+   padding-top: 10px;
+  } 
+  .nav-links ul li{
+   padding-bottom: 20px;
+  }
+  
+  .nav-btn{
+   display: none;
+  }
+  .sec-1{
+   width: 760px;
+   height: 782px;
+  }
+  .sec-1-child{
+   width: 696px;
+   height: 370px;
+   margin-top: 30px;
+  }
+  .sec-1-child p{
+   margin: 0;
+  }
+  .sec-1-btn{
+   margin-top: 40px;
+   display: block;
+  }
+  .sec-1-btn-2{
+   margin-top: 40px;
+  }
+  .sec-2{
+   width: 760px;
+   height: 490px;
+  }
+  .sec-2-child{
+   width: 696px;
+   height: 325px;
+   flex-wrap: wrap;
+   margin: 0;
+  }
+  .factparent{
+   justify-items: center;
+  }
+  .sec-3{
+   width: 760px;
+   height: 2650px;
+  }
+  .sec-3-child{
+   width: 696px;
+   height: auto;
+  }
+  .sec-3-title{
+   justify-items: center;
+  }
+  .sec-3-title p{
+   margin: 0px 50px;
+  }
+  .card-parent{
+   display: block;
+   width: 696px;
+  }
+  .card{
+   width: 695px;
+   height: 315px;
+   margin-bottom: 50px;
+  }
+  .sec-4{
+   width: 760px;
+   height: 2815px;
+  }
+  .sec-4-child{
+   width: 696px;
+   height: auto;
+  }
+  .pricing-card-parent{
+   display: block;
+   width: 696px;
+   height: auto;
+   justify-items: center;
+  }
+  .pricing-card{
+   width: 670px;
+   justify-items: center;
+   margin-bottom: 40px;
+  }
+  .pricing-card button{
+   margin-left: 170px;
+  }
+  .pricing-card-2{
+   width: 670px;
+   justify-items: center;
+   margin-bottom: 40px;
+  }
+   .pricing-card-2 button{
+   margin-left: 170px;
+  }
+  .last-sec{
+   width: 760px;
+  }
+  .last-sec-child{
+   width: 696px;
+  }
+  .copyright{
+   width: 760px;
+   height: 370px;
+   margin-top: 40px;
+  }
+  .copyright-child{
+   width: 696px;
+   height: auto;
+  }
+  .copyright-child-1{
+   display: block;
+  }
+  .copyright-child-1 p{
+   margin-bottom: 15px;
+  }
+}
+
+
+
+
+
+@media (max-width: 430px) {
+    *{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;     
+ }
+   body{
+      max-width: 100%;
+      margin: 0;  
+   }
+   header{
+      width: 100%;
+      justify-content: space-between;
+      position: fixed;
+   }
+   .nav-bar{
+      width: auto;
+      justify-content: space-between;
+      gap: 120px;
+   }
+   .sec-1{
+      width: 417px;
+      height: 885px;
+   }
+   .sec-1-child{
+      width: 354px;
+      height: auto;  
+   }
+   .sec-1-title h1{
+      font-size: 32px;
+   }
+   .sec-2{
+      width: 417px;
+      height: 490px;
+   }
+   .sec-2-child{
+      width: 354px;
+      height: auto;
+   }
+   .factparent{
+      width: 165px;
+   }
+   .sec-3{
+      width: 417px;
+      height: 3290px;
+   }
+   .sec-3-child{
+      width: 354px;
+      height: auto;
+   }
+   .sec-3-title h1{
+      font-size: 48px;
+   }
+   .card-parent{
+      width: 354px;
+      height: auto;
+   }
+   .card{
+      width: 351px;
+      height: 444px;
+   }
+   .sec-4{
+      width: 417px;
+      height: 2700px;
+      padding: 60px 32px;
+   }
+   .sec-4-child{
+      width: 354px;
+      height: auto;
+   }
+   .sec-4-title h1{
+      font-size: 40px;
+   }
+   .pricing-card-parent{
+      width: 354px;
+      height: auto;
+   }
+   .pricing-card{
+      width: 354px;
+      height: 738px;
+   }
+   .pricing-card button{
+      margin-left: 15px;
+   }
+   .pricing-card-2{
+      width: 354px;
+      height: 820px;
+   }
+   .pricing-card-2 button{
+      margin-left: 15px;
+   }
+   .last-sec{
+      width: 417px;
+      height: 1056px;
+   }
+   .last-sec-child{
+      width: 354px;
+      height: auto;
+   }
+   .last-sec-title h1{
+      font-size: 48px;
+   }
+   .contact{
+      width: 380px;
+      height: 585px;
+      padding: 15px;
+   }
+   .contact input{
+      width: 350px;
+   }
+   .contact textarea{
+      width: 350px;
+   }
+   .contact button{
+      width: 350px;
+   }
+   .copyright{
+      width: 417px;
+      height: 395px;
+   }
+   .copyright-child{
+      width: 354px;
+      height: auto;
+   }
+
+
+}
+
+
+
+
+
+
+@media (max-width: 425px) {
+    *{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;     
+ }
+   body{
+      max-width: 100%;
+      margin: 0;  
+   }
+   header{
+      width: 100%;
+      justify-content: space-between;
+      position: fixed;
+   }
+   .nav-bar{
+      width: auto;
+      justify-content: space-between;
+      gap: 120px;
+   }
+   .sec-1{
+      width: 100%;
+      height: 885px;
+   }
+   .sec-1-child{
+      width: 354px;
+      height: auto;  
+   }
+   .sec-1-title h1{
+      font-size: 32px;
+   }
+   .sec-2{
+      width: 100%;
+      height: 490px;
+   }
+   .sec-2-child{
+      width: 354px;
+      height: auto;
+   }
+   .factparent{
+      width: 165px;
+   }
+   .sec-3{
+      width: 100%;
+      height: 3290px;
+   }
+   .sec-3-child{
+      width: 354px;
+      height: auto;
+   }
+   .sec-3-title h1{
+      font-size: 48px;
+   }
+   .card-parent{
+      width: 354px;
+      height: auto;
+   }
+   .card{
+      width: 351px;
+      height: 444px;
+   }
+   .sec-4{
+      width: 100%;
+      height: 2700px;
+      padding: 60px 32px;
+   }
+   .sec-4-child{
+      width: 354px;
+      height: auto;
+   }
+   .sec-4-title h1{
+      font-size: 40px;
+   }
+   .pricing-card-parent{
+      width: 354px;
+      height: auto;
+   }
+   .pricing-card{
+      width: 354px;
+      height: 738px;
+   }
+   .pricing-card button{
+      margin-left: 15px;
+   }
+   .pricing-card-2{
+      width: 354px;
+      height: 820px;
+   }
+   .pricing-card-2 button{
+      margin-left: 15px;
+   }
+   .last-sec{
+      width: 100%;
+      height: 1056px;
+   }
+   .last-sec-child{
+      width: 354px;
+      height: auto;
+   }
+   .last-sec-title h1{
+      font-size: 48px;
+   }
+   .contact{
+      width: 380px;
+      height: 585px;
+      padding: 15px;
+   }
+   .contact input{
+      width: 350px;
+   }
+   .contact textarea{
+      width: 350px;
+   }
+   .contact button{
+      width: 350px;
+   }
+   .copyright{
+      width: 100%;
+      height: 395px;
+   }
+   .copyright-child{
+      width: 354px;
+      height: auto;
+   }
+
+}
+
+
+
+
+@media (max-width: 390px) {
+    *{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;     
+ }
+   body{
+      max-width: 100%;
+      margin: 0;  
+   }
+   header{
+      width: 100%;
+      justify-content: space-between;
+      position: fixed;
+   }
+   .nav-bar{
+      width: auto;
+      justify-content: space-between;
+      gap: 120px;
+   }
+   .sec-1{
+      width: 367px;
+      height: 860px;
+   }
+   .sec-1-child{
+      width: 305px;
+      height: auto;
+   }
+   .sec-2{
+      width: 367px;
+      height: 500px;
+      padding: 60px 32px;
+   }
+   .sec-2-child{
+      width: 305px;
+      height: auto;
+   }
+   .factparent{
+      width: 140px;
+   }
+   .sec-3{
+      width: 367px;
+      height: 3400px;
+   }
+   .sec-3-child{
+      width: 305px;
+      height: auto;
+   }
+   .sec-3-title h1{
+      font-size: 38px;
+   }
+   .sec-3-title p{
+      margin: 0;
+   }
+   .card-parent{
+      width: 305px;
+      height: auto;
+   }
+   .card{
+      width: 305px;
+   }
+   .sec-4{
+      width: 367px;
+      height: 3050px;
+   }
+   .sec-4-child{
+      width: 305px;
+      height: auto;
+   }
+   .pricing-card-parent{
+      width: 305px;
+      height: auto;
+   }
+   .pricing-card{
+      width: 305px;
+      height: auto;
+   }
+   .pricing-card button{
+      margin-left: 0;
+      width: 200px;
+   }
+   .pricing-card-2{
+      width: 305px;
+      height: auto;
+   }
+   .pricing-card-2 button{
+      margin-left: 0;
+      width: 200px;
+   }
+   .last-sec{
+      width: 367px;
+      height: 1050px;
+      padding: 80px 16px;
+   }
+   .last-sec-child{
+      width: 305px;
+      height: auto;
+   }
+   .last-sec-title h1{
+      font-size: 34px;
+   }
+   .contact{
+      width: 305px;
+   }
+   .contact input{
+      width: 275px;
+   }
+   .contact textarea{
+      width: 275px;
+   }
+   .contact button{
+      width: 275px;
+   }
+   .copyright{
+      width: 367px;
+      height: 400px;
+   }
+   .copyright-child{
+      width: 305px;
+      height: auto;
+   }
+}
+  
+
+
+
+@media (max-width: 375px) {
+    *{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;     
+ }
+   body{
+      max-width: 375px;
+      margin: 0;  
+   }
+   header{
+      width: 367px;
+      justify-content: space-between;
+      position: fixed;
+   }
+   .nav-bar{
+      width: auto;
+      justify-content: space-between;
+      gap: 120px;
+   }
+   .sec-1{
+      width: 367px;
+      height: 860px;
+   }
+   .sec-1-child{
+      width: 305px;
+      height: auto;
+   }
+   .sec-2{
+      width: 367px;
+      height: 500px;
+      padding: 60px 32px;
+   }
+   .sec-2-child{
+      width: 305px;
+      height: auto;
+   }
+   .factparent{
+      width: 140px;
+   }
+   .sec-3{
+      width: 367px;
+      height: 3400px;
+   }
+   .sec-3-child{
+      width: 305px;
+      height: auto;
+   }
+   .sec-3-title h1{
+      font-size: 38px;
+   }
+   .sec-3-title p{
+      margin: 0;
+   }
+   .card-parent{
+      width: 305px;
+      height: auto;
+   }
+   .card{
+      width: 305px;
+   }
+   .sec-4{
+      width: 367px;
+      height: 3050px;
+   }
+   .sec-4-child{
+      width: 305px;
+      height: auto;
+   }
+   .pricing-card-parent{
+      width: 305px;
+      height: auto;
+   }
+   .pricing-card{
+      width: 305px;
+      height: auto;
+   }
+   .pricing-card button{
+      margin-left: 0;
+      width: 200px;
+   }
+   .pricing-card-2{
+      width: 305px;
+      height: auto;
+   }
+   .pricing-card-2 button{
+      margin-left: 0;
+      width: 200px;
+   }
+   .last-sec{
+      width: 367px;
+      height: 1050px;
+      padding: 80px 16px;
+   }
+   .last-sec-child{
+      width: 305px;
+      height: auto;
+   }
+   .last-sec-title h1{
+      font-size: 34px;
+   }
+   .contact{
+      width: 305px;
+   }
+   .contact input{
+      width: 275px;
+   }
+   .contact textarea{
+      width: 275px;
+   }
+   .contact button{
+      width: 275px;
+   }
+   .copyright{
+      width: 367px;
+      height: 400px;
+   }
+   .copyright-child{
+      width: 305px;
+      height: auto;
+   }
+}
+
+
+
+
+@media (max-width: 320px) {
+    *{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;     
+ }
+   body{
+      max-width: 320px;
+      margin: 0;  
+   }
+   header{
+      width: 312px;
+      justify-content: space-between;
+      position: fixed;
+   }
+   .nav-bar{
+      width: auto;
+      justify-content: space-between;
+      gap: 60px;
+   }
+   .nav-links{
+      width: 240px;
+      height: 270px;
+   }
+   .nav-links ul{
+      height: 270px;
+   }
+   .sec-1{
+      width: 312px;
+      height: 800px;
+       
+   }
+   .sec-1-child{
+      width: 280px;
+      height: auto;
+   }
+   .sec-1-btn button{
+      width: 240px;
+   }
+   .sec-2{
+      width: 312px;
+      height: 600px;
+   }
+   .sec-2-child{
+      width: 280px;
+      height: auto;
+      margin-left: 40px;
+   }
+   .sec-3{
+      width: 312px;
+      height: 3650px;
+   }
+   .sec-3-child{
+      width: 250px;
+      height: auto;
+   }
+   .sec-3-title h1{
+      font-size: 36px;
+   }
+   .card-parent{
+      width: 250px;
+      height: auto;
+   }
+   .card{
+      width: 250px;
+      height: auto;
+   }
+   .sec-4{
+      width: 312px;
+      height: 3200px;
+   }
+   .sec-4-child{
+      width: 250px;
+      height: auto;
+   }
+   .sec-4-title h1{
+      font-size: 32px;
+   }
+   .pricing-card-parent{
+      width: 250px;
+      height: auto;
+   }
+   .pricing-card{
+      width: 250px;
+      height: auto;
+   }
+   .pricing-card button{
+      width: 150px;
+   }
+    .pricing-card-2{
+      width: 250px;
+      height: auto;
+   }
+   .pricing-card-2 button{
+      width: 150px;
+   }
+   .last-sec{
+      width: 312px;
+      height: auto;
+   }
+   .last-sec-child{
+      width: 250px;
+      height: auto;
+   }
+   .contact{
+      width: 250px;
+      height: auto;
+   }
+   .contact input{
+      width: 215px;
+   }
+   .contact textarea{
+      width: 215px;
+   }
+   .contact button{
+      width: 215px;
+   }
+   .copyright{
+      width: 312px;
+      height: auto;
+   }
+   .copyright-child{
+      width: 250px;
+   }
+}
